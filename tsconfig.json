@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2018", // コンパイルされる JavaScript の ECMAScript バージョン
+    "module": "commonjs", // モジュールシステム（Node.js の場合は commonjs）
+    "lib": ["es2018", "dom"], // コンパイラが利用するライブラリ
+    "outDir": "./dist", // 出力するフォルダ
+    "rootDir": "./src", // TypeScript ファイルがあるフォルダ
+    "strict": true, // 厳格な型チェックの有効化
+    "esModuleInterop": true, // ES モジュールとの相互運用性を向上させる
+    "skipLibCheck": true, // ライブラリの型定義ファイルをスキップしてチェック時間を短縮
+    "forceConsistentCasingInFileNames": true // ファイル名の大文字と小文字の一貫性を強制
+  },
+  "include": [
+    "src/**/*.ts" // コンパイルするファイル
+  ],
+  "exclude": [
+    "node_modules", // 除外するフォルダ
+    "**/*.spec.ts" // テストファイルを除外
+  ]
+}
